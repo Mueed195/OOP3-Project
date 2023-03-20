@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "PokerLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/PokerLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PokerLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PokerLibrary/1.0.0": {
+      "type": "project",
+      "path": "../PokerLibrary/PokerLibrary.csproj",
+      "msbuildProject": "../PokerLibrary/PokerLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "PokerLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Mueed\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Semester4\\oop\\Project\\Poker1b\\Poker1b.csproj",
+      "projectName": "Poker1b",
+      "projectPath": "C:\\Semester4\\oop\\Project\\Poker1b\\Poker1b.csproj",
+      "packagesPath": "C:\\Users\\Mueed\\.nuget\\packages\\",
+      "outputPath": "C:\\Semester4\\oop\\Project\\Poker1b\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Mueed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\MicroFocus.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Micro Focus\\Visual COBOL\\NuGetPackages": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Semester4\\oop\\Project\\PokerLibrary\\PokerLibrary.csproj": {
+              "projectPath": "C:\\Semester4\\oop\\Project\\PokerLibrary\\PokerLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
