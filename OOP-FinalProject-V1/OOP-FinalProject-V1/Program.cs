@@ -42,39 +42,49 @@ namespace OOP_FinalProject_V1
 
                 Console.WriteLine("_____________________________________");
                 Console.WriteLine("River Cards:");
-                Player riverman = new Player("Old Man River", river, 1000);
+                Player riverman = new Player("Old Man River", river, 0);
                 Console.WriteLine(riverman.playersCards[0]);
                 Console.WriteLine(riverman.playersCards[1]);
 
                 Console.WriteLine("_____________________________________");
                 Console.WriteLine("Betting Round 1:");
 
-                Logic.bettingRound(pool, player1, player2, player3, player4);
+                Logic.bettingRound(player1, player2, player3, player4, riverman);
 
-                Console.WriteLine("The next card in the river is:");
+                Console.WriteLine("The river draws a third card:");
+                Console.WriteLine(riverman.playersCards[0]);
+                Console.WriteLine(riverman.playersCards[1]);
                 Console.WriteLine(riverman.playersCards[2]);
 
                 Console.WriteLine("_____________________________________");
                 Console.WriteLine("Betting Round 2:");
 
-                Logic.bettingRound(pool, player1, player2, player3, player4);
+                Logic.bettingRound(player1, player2, player3, player4, riverman);
 
-                Console.WriteLine("The next card in the river is:");
+                Console.WriteLine("The river draws a fourth card:");
+                Console.WriteLine(riverman.playersCards[0]);
+                Console.WriteLine(riverman.playersCards[1]);
+                Console.WriteLine(riverman.playersCards[2]);
                 Console.WriteLine(riverman.playersCards[3]);
 
                 Console.WriteLine("_____________________________________");
                 Console.WriteLine("Betting Round 3:");
 
-                Logic.bettingRound(pool, player1, player2, player3, player4);
+                Logic.bettingRound(player1, player2, player3, player4, riverman);
 
-                Console.WriteLine("The last card in the river is:");
+                Console.WriteLine("The last card in the river is drawn:");
+                Console.WriteLine(riverman.playersCards[0]);
+                Console.WriteLine(riverman.playersCards[1]);
+                Console.WriteLine(riverman.playersCards[2]);
+                Console.WriteLine(riverman.playersCards[3]);
                 Console.WriteLine(riverman.playersCards[4]);
 
                 Console.WriteLine("_____________________________________");
                 Console.WriteLine("Final Betting Round");
 
-                Logic.bettingRound(pool, player1, player2, player3, player4);
+                Logic.bettingRound(player1, player2, player3, player4, riverman);
 
+                Console.WriteLine("_____________________________________");
                 Logic.determineWinner(player1, player2, player3, player4, riverman);
 
                 Console.WriteLine("Would you like to play another round? (Y/N)");
@@ -84,8 +94,10 @@ namespace OOP_FinalProject_V1
                     if (response == "Y")
                     {
                         Console.WriteLine("Alright, let's start the next round!\n\n\n");
+                        Console.Clear();
 
-                    }else if (response == "N")
+                    }
+                    else if (response == "N")
                     {
                         Console.WriteLine("Thank's for playing!");
                         playing = false;

@@ -17,31 +17,43 @@ namespace OOP_FinalProject_V1
 {
     public class Logic
     {
-        public static double bettingRound(double pool, Player player1, Player player2, Player player3, Player player4)
+
+        public static double bettingRound(Player player1, Player player2, Player player3, Player player4, Player riverman)
         {
             double p1bet = 0;
             double p2bet = 0;
             double p3bet = 0;
             double p4bet = 0;
             
-            Console.WriteLine("Player 1, what is your bet?");
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine(player1.name + ", what is your bet?");
             p1bet = double.Parse(Console.ReadLine());
             player1.funds = player1.funds - p1bet;
-            pool = pool + p1bet;
-            Console.WriteLine("Player 2, what is your bet?");
+            Console.WriteLine(player1.name + ", you have " + player1.funds + " dollars left");
+            riverman.funds = riverman.funds + p1bet;
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine(player2.name + ", what is your bet?");
             p2bet = double.Parse(Console.ReadLine());
             player2.funds = player2.funds - p2bet;
-            pool = pool + p2bet;
-            Console.WriteLine("Player 3, what is your bet?");
+            Console.WriteLine(player2.name + ", you have " + player2.funds + " dollars left");
+            riverman.funds = riverman.funds + p2bet;
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine(player3.name + ", what is your bet?");
             p3bet = double.Parse(Console.ReadLine());
             player3.funds = player3.funds - p3bet;
-            pool = pool + p3bet;
-            Console.WriteLine("Player 4, what is your bet?");
+            Console.WriteLine(player3.name + ", you have " + player3.funds + " dollars left");
+            riverman.funds = riverman.funds + p3bet;
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine(player4.name + ", what is your bet?");
             p4bet = double.Parse(Console.ReadLine());
             player4.funds = player4.funds - p4bet;
-            pool = pool + p4bet;
+            Console.WriteLine(player4.name + ", you have " + player4.funds + " dollars left");
+            riverman.funds = riverman.funds + p4bet;
 
-            return pool;
+
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine("Total Money in the Pot: $" + riverman.funds);
+            return riverman.funds;
         }
 
         public static void determineWinner(Player player1, Player player2, Player player3, Player player4, Player riverman)
@@ -303,13 +315,13 @@ namespace OOP_FinalProject_V1
 
 
 
-            Console.WriteLine(player1score);
+            //Console.WriteLine(player1score);
 
-            Console.WriteLine(player2score);
+            //Console.WriteLine(player2score);
 
-            Console.WriteLine(player3score);
+            //Console.WriteLine(player3score);
 
-            Console.WriteLine(player4score);
+            //Console.WriteLine(player4score);
 
             int winner = HighestScore(player1score, player2score, player3score, player4score);
 
@@ -319,18 +331,26 @@ namespace OOP_FinalProject_V1
             if (winner == 1)
             {
                 wincondition = WinType(player1score);
+                player1.funds = player1.funds + riverman.funds;
+                Console.WriteLine("The pool of " + riverman.funds + " has been added to " + player1.name + "'s money. Total money is now: " + player1.funds);
             } 
             else if (winner == 2)
             {
                 wincondition = WinType(player2score);
+                player2.funds = player2.funds + riverman.funds;
+                Console.WriteLine("The pool of " + riverman.funds + " has been added to " + player2.name + "'s money. Total money is now: " + player2.funds);
             }
             else if (winner == 3)
             {
                 wincondition = WinType(player3score);
+                player3.funds = player3.funds + riverman.funds;
+                Console.WriteLine("The pool of " + riverman.funds + " has been added to " + player3.name + "'s money. Total money is now: " + player3.funds);
             }
             else if (winner == 4)
             {
                 wincondition = WinType(player4score);
+                player4.funds = player4.funds + riverman.funds;
+                Console.WriteLine("The pool of " + riverman.funds + " has been added to " + player4.name + "'s money. Total money is now: " + player4.funds);
             }
 
             Console.WriteLine("They had a {0}", wincondition);

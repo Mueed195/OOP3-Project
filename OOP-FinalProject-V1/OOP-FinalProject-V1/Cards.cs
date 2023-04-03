@@ -48,7 +48,7 @@ namespace Cards
         public override string ToString()
         {
 
-            return "This card is the " + this.CardNumber+ " of " + this.Suit;
+            return this.CardNumber+ " of " + this.Suit;
 
 
 

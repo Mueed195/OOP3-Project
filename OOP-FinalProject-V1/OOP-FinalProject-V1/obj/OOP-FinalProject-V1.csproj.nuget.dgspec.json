@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zmw02\\Desktop\\School Assignments + Garbage\\mafd4202\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj": {}
+    "C:\\Users\\Alex-PC\\Desktop\\OOP4200\\OOP3-Project-main\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zmw02\\Desktop\\School Assignments + Garbage\\mafd4202\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj": {
+    "C:\\Users\\Alex-PC\\Desktop\\OOP4200\\OOP3-Project-main\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zmw02\\Desktop\\School Assignments + Garbage\\mafd4202\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj",
+        "projectUniqueName": "C:\\Users\\Alex-PC\\Desktop\\OOP4200\\OOP3-Project-main\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj",
         "projectName": "OOP-FinalProject-V1",
-        "projectPath": "C:\\Users\\zmw02\\Desktop\\School Assignments + Garbage\\mafd4202\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj",
-        "packagesPath": "C:\\Users\\zmw02\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zmw02\\Desktop\\School Assignments + Garbage\\mafd4202\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\obj\\",
+        "projectPath": "C:\\Users\\Alex-PC\\Desktop\\OOP4200\\OOP3-Project-main\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\OOP-FinalProject-V1.csproj",
+        "packagesPath": "C:\\Users\\Alex-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex-PC\\Desktop\\OOP4200\\OOP3-Project-main\\OOP-FinalProject-V1\\OOP-FinalProject-V1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zmw02\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\MicroFocus.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Alex-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Micro Focus\\Visual COBOL\\NuGetPackages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -57,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
